@@ -1,7 +1,7 @@
 CC = gcc
-CFLAGS_DEBUG = -g -Wall 
-CFLAGS_RELEASE = -O3 -Wall -Wextra -Werror -Wshadow -march=native
-CFLAGS_TEST = -O0 -Wall -Wextra -Werror -Wshadow -march=native -fprofile-arcs -ftest-coverage
+CFLAGS_DEBUG = -g -Wall -lm
+CFLAGS_RELEASE = -O3 -Wall -Wextra -Werror -Wshadow -march=native -lm
+CFLAGS_TEST = -O0 -Wall -Wextra -Werror -Wshadow -march=native -fprofile-arcs -ftest-coverage -lm
 
 
 LIBTYPE ?= STATIC
