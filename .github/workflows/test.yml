@@ -1,0 +1,18 @@
+name: build
+
+on: push
+
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install gcovr
+      run: |
+        sudo apt -y install gcovr
+    - name: Test
+      run: |
+        gcc --version
+        make test
+    - uses: codecov/codecov-action@v2

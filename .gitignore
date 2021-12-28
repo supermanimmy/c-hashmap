@@ -1,0 +1,10 @@
+.vscode
+
+*.exe
+*.xml
+*.gcno
+*.gcda
+*.a
+*.o
+*.html
+*.css
